@@ -1,0 +1,222 @@
+/* Allmän styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigeringsmeny */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+nav a:hover, nav a.active {
+    background-color: #555;
+}
+
+/* Generell styling för sektioner */
+/* Sektion med subtil bakgrund och skugga */
+section {
+    background: linear-gradient(135deg, #f7f7f7, #eaeaea); /* Ljusgrå gradient */
+    padding: 40px 20px;
+    border-radius: 10px; /* Rundade hörn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mjuk skugga */
+    margin: 20px auto;
+    max-width: 800px; /* Begränsa bredden för en renare layout */
+}
+
+/* Titelstil */
+section h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Lista med ikoner */
+section ul, section ol {
+    margin: 10px 0 10px 20px;
+    padding: 0;
+    list-style-position: inside;
+    font-size: 1.1em;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li i {
+    color: #000; /* Svart ikonfärg */
+    margin-right: 10px;
+}
+
+/* Modern tabellstil */
+section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px; /* Rundade hörn */
+    overflow: hidden; /* För att runda hörn på hela tabellen */
+    font-size: 1em;
+}
+
+section table th, section table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Subtila linjer */
+}
+
+section table th {
+    background-color: #f4f4f4; /* Ljus bakgrund för rubriker */
+    font-weight: bold;
+    color: #333;
+}
+
+section table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Diskret randning för rader */
+}
+
+section table tr:hover {
+    background-color: #f1f1f1; /* Ljus ton vid hovring */
+}
+
+/* Centrerar innehållet */
+section .content {
+    text-align: left; /* Vänsterjusterar text */
+    line-height: 1.6; /* För bättre läsbarhet */
+}
+/* Hero-sektion */
+#hero {
+    width: 100%; /* Täcker hela sidbredden */
+    max-width: none; /* Åsidosätter den generella max-bredden */
+    height: 500px; /* Justera höjden efter behov */
+    background-size: cover; /* Skalar bakgrundsbilden korrekt */
+    background-position: center; /* Centrerar bakgrundsbilden */
+    display: flex; /* Flexbox för centrering av innehåll */
+    align-items: center; /* Vertikal centrering */
+    justify-content: center; /* Horisontell centrering */
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(51, 53, 55, 0.8); /* Mörk overlay */
+    color: white; /* Vit text */
+    padding: 20px 120px 20px 20px; /* Padding med plats för högerjustering */
+    border-radius: 10px; /* Rundade hörn */
+    display: flex; /* Flexbox för att placera logotyp och text sida vid sida */
+    align-items: center; /* Vertikal centrering */
+    justify-content: center; /* Horisontell centrering av hela innehållet */
+    gap: 20px; /* Skapar mellanrum mellan logotyp och text */
+    max-width: 1200px; /* Begränsar bredden på innehållet */
+    margin: 0 auto; /* Centrera hela textrutan horisontellt */
+}
+
+.hero-logo {
+    max-width: 200px; /* Begränsar logotypens storlek */
+    height: auto; /* Bevarar proportionerna */
+    margin-left: 0; /* Ta bort eventuell extra marginal till vänster */
+    padding: 0; /* Ta bort extra padding */
+}
+
+.hero-text {
+    display: flex; /* Flexbox för textinnehåll */
+    flex-direction: column; /* Staplar rubrik och stycken vertikalt */
+    text-align: center; /* Centrerar texten */
+    line-height: 1.5; /* För bättre läsbarhet */
+}
+
+.hero-text h1 {
+    font-size: 2.5em; /* Rubrikstorlek */
+    margin: 0 0 10px; /* Avstånd under rubriken */
+}
+
+.hero-text p {
+    font-size: 1.2em; /* Styckestorlek */
+    margin: 5px 0; /* Avstånd mellan stycken */
+}
+
+/* Specifika hero-bilder */
+body#index #hero {
+    background-image: url('images/hero-kitchen2.jpg');
+}
+body#tjanster #hero {
+    background-image: url('images/tjanster.png');
+}
+body#om-oss #hero {
+    background-image: url('images/about-us.png');
+}
+body#priser #hero {
+    background-image: url('images/priser.png');
+}
+body#kontakt #hero {
+    background-image: url('images/kontakt.png');
+}
+/* Footer */
+footer {
+    background-color: #333; /* Mörk bakgrund */
+    color: white; /* Vit textfärg */
+    text-align: center; /* Centrerar text */
+    padding: 2em 1em; /* Avstånd inuti foten */
+    display: flex;
+    flex-direction: column; /* Staplar innehållet på små skärmar */
+    gap: 1em; /* Skapar mellanrum mellan rader */
+    border-top: 2px solid #555; /* Subtil linje ovanför foten */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Skugga för djup */
+}
+
+footer p {
+    margin: 0.5em 0; /* Avstånd mellan stycken */
+}
+
+/* Länkar i foten */
+footer a {
+    color: #ffcc00; /* Ljusgul färg som är lättläst på mörk bakgrund */
+    text-decoration: none; /* Ingen understrykning som standard */
+}
+
+footer a:hover {
+    color: #fff; /* Vit färg vid hovring */
+    text-decoration: underline; /* Understrykning vid hovring */
+}
+
+/* Responsiv layout för foten */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row; /* Gör innehållet horisontellt på större skärmar */
+        justify-content: space-around; /* Sprider ut innehållet jämnt */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Staplar logotyp och text */
+        text-align: center;
+    }
+    .hero-logo {
+        margin-bottom: 10px; /* Avstånd mellan logotyp och text */
+    }
+}
