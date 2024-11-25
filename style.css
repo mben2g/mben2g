@@ -12,6 +12,7 @@ body {
 nav {
     background-color: #333;
     padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lägger till en liten skugga */
 }
 nav ul {
     list-style: none;
@@ -51,9 +52,10 @@ section h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #333;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #ffcc00; /* Guldlinje under rubriker */
     display: inline-block;
     margin-bottom: 20px;
+    padding-bottom: 5px; /* Avstånd från text till linje */
 }
 
 /* Lista med ikoner */
@@ -199,7 +201,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #fff; /* Vit färg vid hovring */
+    color: #ffcc00; /* Guldaktig färg vid hovring */
     text-decoration: underline; /* Understrykning vid hovring */
 }
 
