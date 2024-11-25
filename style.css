@@ -38,7 +38,7 @@ nav a:hover, nav a.active {
 /* Generell styling för sektioner */
 /* Sektion med subtil bakgrund och skugga */
 section {
-    background: linear-gradient(135deg, #f7f7f7, #eaeaea); /* Ljusgrå gradient */
+    background: linear-gradient(180deg, #d9f0ff, #ffffff); /* Tonar från ljusblå till vit */
     padding: 40px 20px;
     border-radius: 10px; /* Rundade hörn */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mjuk skugga */
