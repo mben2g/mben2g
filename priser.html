@@ -1,57 +1,100 @@
-<section id="prices">
-    <h2>Våra Priser</h2>
-    <p class="content">
-        Välkommen till vår prissida! På <strong>Som Spegel AB</strong> strävar vi efter att erbjuda prisvärda tjänster utan att kompromissa med kvaliteten. <strong>Alla priser är inklusive moms för privatpersoner.</strong> För företag, som vid kontorsstädning, är priserna exklusive moms.
-    </p>
-    <ul>
-        <li><i class="fas fa-check-circle"></i> Hemstädning – Skinande rent</li>
-        <li><i class="fas fa-check-circle"></i> Kontorsstädning – Professionellt utfört</li>
-        <li><i class="fas fa-check-circle"></i> Flyttstädning – Noggrannhet garanteras</li>
-        <li><i class="fas fa-check-circle"></i> Fönsterputsning – Klara och skinande fönster</li>
-        <li><i class="fas fa-check-circle"></i> Storstädning – När det krävs det lilla extra</li>
-    </ul>
-    <table>
-        <thead>
-            <tr>
-                <th>Tjänst</th>
-                <th>Pris per timme</th>
-                <th>Efter RUT-avdrag (inkl. moms)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Hemstädning</td>
-                <td>375 kr (inkl. moms)</td> <!-- 300 kr + 25 % moms -->
-                <td>187,50 kr</td> <!-- 50 % av 375 kr -->
-            </tr>
-            <tr>
-                <td>Kontorsstädning</td>
-                <td>350 kr (exkl. moms)</td> <!-- Företagspris -->
-                <td>Ej tillämpligt</td>
-            </tr>
-            <tr>
-                <td>Flyttstädning</td>
-                <td>562,50 kr (inkl. moms)</td> <!-- 450 kr + 25 % moms -->
-                <td>281,25 kr</td> <!-- 50 % av 562,50 kr -->
-            </tr>
-            <tr>
-                <td>Fönsterputsning</td>
-                <td>500 kr (inkl. moms)</td> <!-- 400 kr + 25 % moms -->
-                <td>250 kr</td> <!-- 50 % av 500 kr -->
-            </tr>
-            <tr>
-                <td>Storstädning</td>
-                <td>562,50 kr (inkl. moms)</td> <!-- 450 kr + 25 % moms -->
-                <td>281,25 kr</td> <!-- 50 % av 562,50 kr -->
-            </tr>
-        </tbody>
-    </table>
-    <h3>RUT-avdrag för privatpersoner</h3>
-    <p class="content">
-        Som privatperson kan du dra nytta av RUT-avdraget när du anlitar våra tjänster. RUT-avdraget ger dig rätt till 50 % skattereduktion på arbetskostnaden för hushållsnära tjänster, inklusive moms. Detta gör våra tjänster ännu mer prisvärda!
-    </p>
-    <ul>
-        <li><strong>Exempel:</strong> För en hemstädning som kostar 375 kr per timme inklusive moms betalar du endast 187,50 kr efter RUT-avdrag.</li>
-        <li><strong>Hur fungerar det?</strong> Vi sköter allt pappersarbete och drar av summan direkt från din faktura. Det enda du behöver göra är att säkerställa att du har rätt till RUT-avdrag enligt Skatteverkets regler.</li>
-    </ul>
-</section>
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Våra Priser - Som Spegel AB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body id="priser">
+    <!-- Navigeringsmeny -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="tjanster.html">Våra Tjänster</a></li>
+            <li><a href="om-oss.html">Om Oss</a></li>
+            <li><a href="priser.html" class="active">Våra Priser</a></li>
+            <li><a href="kontakt.html">Kontakta Oss</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero-sektion -->
+    <section id="hero">
+        <div class="hero-content">
+            <img src="images/logo2.png" alt="Som Spegel AB Logotyp" class="hero-logo">
+            <div class="hero-text">
+                <h1>Våra Priser</h1>
+                <p>Transparent och rättvist prissatta tjänster</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prisinnehåll -->
+    <section id="prices">
+        <h2>Våra Priser</h2>
+        <p class="content">
+            Välkommen till vår prissida! På <strong>Som Spegel AB</strong> strävar vi efter att erbjuda prisvärda tjänster utan att kompromissa med kvaliteten. <strong>Alla priser är inklusive moms för privatpersoner.</strong> För företag, som vid kontorsstädning, är priserna exklusive moms.
+        </p>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> Hemstädning – Skinande rent</li>
+            <li><i class="fas fa-check-circle"></i> Kontorsstädning – Professionellt utfört</li>
+            <li><i class="fas fa-check-circle"></i> Flyttstädning – Noggrannhet garanteras</li>
+            <li><i class="fas fa-check-circle"></i> Fönsterputsning – Klara och skinande fönster</li>
+            <li><i class="fas fa-check-circle"></i> Storstädning – När det krävs det lilla extra</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tjänst</th>
+                    <th>Pris per timme</th>
+                    <th>Efter RUT-avdrag (inkl. moms)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hemstädning</td>
+                    <td>375 kr (inkl. moms)</td> <!-- 300 kr + 25 % moms -->
+                    <td>187,50 kr</td> <!-- 50 % av 375 kr -->
+                </tr>
+                <tr>
+                    <td>Kontorsstädning</td>
+                    <td>350 kr (exkl. moms)</td> <!-- Företagspris -->
+                    <td>Ej tillämpligt</td>
+                </tr>
+                <tr>
+                    <td>Flyttstädning</td>
+                    <td>562,50 kr (inkl. moms)</td> <!-- 450 kr + 25 % moms -->
+                    <td>281,25 kr</td> <!-- 50 % av 562,50 kr -->
+                </tr>
+                <tr>
+                    <td>Fönsterputsning</td>
+                    <td>500 kr (inkl. moms)</td> <!-- 400 kr + 25 % moms -->
+                    <td>250 kr</td> <!-- 50 % av 500 kr -->
+                </tr>
+                <tr>
+                    <td>Storstädning</td>
+                    <td>562,50 kr (inkl. moms)</td> <!-- 450 kr + 25 % moms -->
+                    <td>281,25 kr</td> <!-- 50 % av 562,50 kr -->
+                </tr>
+            </tbody>
+        </table>
+        <h3>RUT-avdrag för privatpersoner</h3>
+        <p class="content">
+            Som privatperson kan du dra nytta av RUT-avdraget när du anlitar våra tjänster. RUT-avdraget ger dig rätt till 50 % skattereduktion på arbetskostnaden för hushållsnära tjänster, inklusive moms. Detta gör våra tjänster ännu mer prisvärda!
+        </p>
+        <ul>
+            <li><strong>Exempel:</strong> För en hemstädning som kostar 375 kr per timme inklusive moms betalar du endast 187,50 kr efter RUT-avdrag.</li>
+            <li><strong>Hur fungerar det?</strong> Vi sköter allt pappersarbete och drar av summan direkt från din faktura. Det enda du behöver göra är att säkerställa att du har rätt till RUT-avdrag enligt Skatteverkets regler.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Som Spegel AB. Alla rättigheter förbehållna.</p>
+        <p><i class="fas fa-phone"></i> Telefon: 070-123 45 67</p>
+        <p><i class="fas fa-envelope"></i> E-post: <a href="mailto:info@somspegelab.se">info@somspegelab.se</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Besök oss: Storgatan 12, 123 45 Stockholm</p>
+    </footer>
+</body>
+</html>
